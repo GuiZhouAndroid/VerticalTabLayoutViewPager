@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <q.rorbin.verticaltablayout.VerticalTabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:scrollIndicators="bottom"
+        android:fitsSystemWindows="true"
+        app:indicator_corners="5dp"
+        app:indicator_width="2dp"
+        android:background="#000000"
+        app:indicator_color="#FFFFFF"
+        app:indicator_gravity="fill"
+        app:tab_height="50dp"
+        app:tab_mode="scrollable" />
+
+    <com.zs.itking.verticaltablayoutviewpager.VerticalPager
+        android:id="@+id/viewpager"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4" />
+
+</LinearLayout>
